@@ -10,7 +10,7 @@ const __dirname = path.dirname(__filename);
 async function run() {
   await initDb();
 
-  const jsonFile = path.join(__dirname, '..', 'data', 'US_recipes.json');
+  const jsonFile = path.join(__dirname, '..', 'data', 'US_recipes_clean.json');
   if (!fs.existsSync(jsonFile)) {
     console.error(`Data file not found at: ${jsonFile}`);
     process.exit(1);
